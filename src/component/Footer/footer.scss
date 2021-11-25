@@ -1,0 +1,21 @@
+.container{
+    .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom:25px
+}
+.menudiv ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    color: #989ab6;
+    font-weight: 500;
+}
+.menudiv ul .text{
+    border-left: 3px solid #989ab6;
+    margin-left: 20px;
+}
+}

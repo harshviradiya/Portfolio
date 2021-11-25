@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ecf8ff;
+}
+/* *:focus{
+cursor: none ;
+} */
+h1 {
+  font-size: 3.563rem;
+  line-height: 4.563rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.75rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.563rem;
+  line-height: 2.375rem;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.063rem;
+  line-height: 1.688rem;
+  text-transform: uppercase;
+}
+section {
+  position: relative;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.heading {
+  color: #2d1863;
+  font-weight: 500;
+  margin-bottom: 15px;
+  border-left: 3px solid #fbdb71;
+  padding-left: 5px;
+  font-size: 35px;
+}
+.whitebox {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  background-color: white;
+  border-radius: 1rem 1rem 0 1rem;
+  text-align: center;
+}
+.animationbox {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  -webkit-transform: perspective(500);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+figcaption {
+  background-color: #8536fa;
+  color: #fff;
+  padding: 1.5em;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-transform: rotateX(-90deg);
+  -webkit-transform-origin: 100% 0;
+  -webkit-transition: 0.5s;
+}
+.contactme {
+  background-color: #6f34fe;
+  color: white;
+  padding: 10px;
+  width: 120px;
+  border-radius: 1rem;
+  margin-right: 10px;
+  border: none;
+}
+.Learn_More {
+  background-color: #fed553;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 1rem;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+ol li,
+ul li {
+  list-style: none;
+}
+button,
+button:focus {
+  outline: none;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}

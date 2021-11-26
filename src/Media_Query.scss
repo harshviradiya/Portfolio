@@ -1,12 +1,97 @@
 @media (max-width: 1399.98px) {
 }
 @media (max-width: 1199.98px) {
-}
-@media (max-width: 991.98px) {
+    section {
+        padding: 40px 0;
+    }
     .container {
         .third {
             .backbox {
-                width: 100%;
+                .exps {
+                    position: static;
+                }
+                .exp1 {
+                    top: -30%;
+                    left: 50px;
+                }
+                .exp2 {
+                    right: 50px;
+                }
+            }
+        }
+        .second_lfri {
+            .second_right {
+                width: 50%;
+            }
+            .second_left {
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 1081px) {
+    section {
+        padding: 35px 0;
+    }
+    figcaption {
+        padding: 0.7em 0.5em 0.5em 0.5em;
+    }
+    .container {
+        .forth {
+            .portfolio_content {
+                .pbox {
+                    .bgbox {
+                        width: 590px;
+                        .animationbox {
+                            width: 235px;
+                            height: 235px;
+                        }
+
+                        .project_1 {
+                            left: -85px;
+                        }
+                        .project_2 {
+                            left: 178px;
+                        }
+                        .project_3 {
+                            right: -85px;
+                        }
+                        .project_4 {
+                            left: -85px;
+                        }
+                        .project_5 {
+                            left: 178px;
+                        }
+                        .project_6 {
+                            right: -85px;
+                        }
+                    }
+                }
+            }
+        }
+        .second_lfri {
+            .second_right {
+                width: 45%;
+            }
+            .second_left {
+                width: 55%;
+            }
+        }
+        .get_in_touch {
+            .left {
+                width: 80% !important;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    section {
+        padding: 30px 0;
+    }
+    .container {
+        .third {
+            .backbox {
+                width: 80%;
                 justify-content: center;
                 .exps {
                     position: static;
@@ -20,9 +105,20 @@
                 }
             }
         }
+        .second_lfri {
+            .second_right {
+                width: 48%;
+            }
+            .second_left {
+                width: 52%;
+            }
+        }
     }
 }
 @media (max-width: 767.98px) {
+    section {
+        padding: 25px 0;
+    }
     .container {
         .header {
             .menudiv {
@@ -35,9 +131,9 @@
             }
         }
         .leftright {
-            height: auto !important;
+            height: auto;
             .left {
-                width: 100% !important;
+                width: 100%;
                 .bgshape {
                     img {
                         display: none;
@@ -52,20 +148,28 @@
         }
         .second_lfri {
             flex-wrap: wrap;
-            flex-flow: column-reverse;
             .second_left {
-                width: 100% !important;
-                height: 350px !important;
+                width: 100%;
+                height: 350px;
                 .boxdiv {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3rem;
                     .backbox {
-                        height: 225px !important;
+                        height: 225px;
                         .eduction1 {
-                            bottom: 27px !important;
+                            bottom: 27px;
                         }
                         .eduction2 {
-                            top: 25px !important;
+                            top: 25px;
                         }
                     }
+                }
+            }
+            .second_right {
+                width: 100%;
+                .collage {
+                    // width: 100%;
                 }
             }
         }
@@ -142,26 +246,26 @@
         }
         .third {
             flex-wrap: wrap;
-            height: auto !important;
+            height: auto;
             flex-direction: column-reverse;
             .thirdl {
-                width: 100% !important;
-                min-height: 350px !important;
+                width: 100%;
+                min-height: 350px;
                 .left {
-                    width: auto !important;
+                    width: auto;
                 }
             }
             .thirdr {
-                width: 100% !important;
-                height: 100% !important;
+                width: 100%;
+                height: 100%;
                 .boxdiv {
                     .backbox {
-                        height: 300px !important;
+                        height: 300px;
                         .exp1 {
-                            bottom: 25px !important;
+                            bottom: 25px;
                         }
                         .exp2 {
-                            top: 25px !important;
+                            top: 25px;
                         }
                     }
                 }
@@ -231,8 +335,7 @@
             height: auto !important;
             .left {
                 width: 100% !important;
-                height: 320px !important;
-                padding-top: 100px !important;
+                height: auto !important;
             }
             .right {
                 width: 100% !important;
@@ -241,8 +344,11 @@
     }
 }
 @media (max-width: 575.98px) {
+    section {
+        padding: 15px 0;
+    }
     .heading {
-        font-size: 25px !important;
+        font-size: 25px;
     }
     .container {
         .educationh {
@@ -258,19 +364,23 @@
                 .content {
                     .text {
                         .name {
-                            font-size: 30px !important;
+                            font-size: 30px;
                         }
                     }
                 }
             }
         }
+        .educationh {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
         .second_lfri {
             padding: 0 24px 24px 24px;
             flex-wrap: wrap;
             flex-direction: row-reverse;
-            height: auto !important;
+            height: auto;
             .second_right {
-                height: auto !important;
+                height: auto;
                 .collage {
                     width: auto !important;
                     height: auto !important;
@@ -285,6 +395,61 @@
             }
             .second_left {
                 height: auto !important;
+                .boxdiv {
+                    .backbox {
+                        height: 180px;
+                        width: 120px;
+                        .eduction1 {
+                            bottom: 30px;
+                            width: 125px;
+                            height: 125px;
+                            right: 70px;
+                            .lambtonimage {
+                                height: 34%;
+                                margin: 10px;
+                                width: 34%;
+                                object-fit: cover;
+                            }
+                        }
+                        .eduction2 {
+                            width: 125px;
+                            height: 125px;
+                            top: 26px;
+                            left: 70px;
+                            .guniversity {
+                                object-fit: contain;
+                                height: 34%;
+                                margin: 10px;
+                                width: 34%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .third {
+            margin-top: 1rem;
+        }
+        .get_in_touch {
+            .left {
+                height: auto !important;
+                .details {
+                    .backbox {
+                        &::after {
+                            content: "";
+                            position: absolute !important;
+                            top: 0 !important;
+                            left: 50% !important;
+                            border: 10px solid #e3e0ff;
+                            width: 165px !important;
+                            height: 350px !important;
+                            transform: translate(-50%);
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            .right {
             }
         }
     }

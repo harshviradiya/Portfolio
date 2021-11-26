@@ -1,9 +1,9 @@
 .container {
     .leftright {
         display: flex;
-        height: 500px;
+        height: auto;
         justify-content: space-between;
-        margin-top: 25px;
+
         position: relative;
         .left {
             width: 60%;
@@ -48,10 +48,10 @@
             }
             .bgshape {
                 position: absolute;
-                bottom: 20px;
+                bottom: 0px;
                 height: 65px;
                 width: 65px;
-                left: 170px;
+                left: 31%;
             }
         }
     }
@@ -59,7 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 25px;
+
         position: relative;
         .second_left {
             width: 50%;
@@ -111,7 +111,7 @@
             }
         }
         .second_right {
-            min-height: 595px;
+            // min-height: 595px;
             .text {
                 h4 {
                     border-bottom: 3px solid #e3e0ff;
@@ -188,7 +188,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 560px;
+        height: auto;
+        margin-top: 6rem;
         .thirdl {
             width: 50%;
             min-height: 400px;
@@ -306,7 +307,7 @@
     }
     .skills {
         text-align: center;
-        margin-top: 10px;
+
         .heading {
             color: #2d1863;
             font-weight: 500;
@@ -322,6 +323,7 @@
             flex-wrap: wrap;
             position: relative;
             justify-content: space-around;
+            margin-top: 1rem;
             .card {
                 text-align: center;
                 width: 165px;
@@ -477,7 +479,6 @@
         }
     }
     .forth {
-        margin-top: 25px;
         .portfolio_header {
             display: flex;
             justify-content: space-between;
@@ -554,8 +555,6 @@
                     }
 
                     .project_2 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         bottom: 200px;
                         left: 225px;
@@ -593,8 +592,6 @@
                     }
 
                     .project_3 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         bottom: 200px;
                         right: -160px;
@@ -631,8 +628,6 @@
                     }
 
                     .project_4 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         top: 200px;
                         left: -160px;
@@ -670,8 +665,6 @@
                     }
 
                     .project_5 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         top: 200px;
                         left: 225px;
@@ -708,8 +701,6 @@
                     }
 
                     .project_6 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         top: 200px;
                         right: -160px;
@@ -721,6 +712,8 @@
                         background-color: #222;
                         display: block;
                         height: 100%;
+                        width: 100%;
+                        object-fit: cover;
                         -webkit-transition: 0.5s;
                     }
                     .project_6:hover img {
@@ -814,8 +807,7 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        height: 465px;
-        margin-top: 50px;
+
         .left {
             width: 50%;
             .details {
@@ -901,6 +893,81 @@
                                     margin: 5px;
                                     justify-content: center;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .touch-details {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                position: relative;
+                .touch-box {
+                    width: 40%;
+                    background: #fff;
+                    margin: 1rem;
+                    border-radius: 10px;
+                    min-width: 200px;
+                    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.175);
+                    box-sizing: border-box;
+                    padding: 0.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    &:nth-child(1) {
+                        border-bottom-right-radius: 0;
+                    }
+                    &:nth-child(2) {
+                        border-bottom-left-radius: 0;
+                    }
+                    &:nth-child(3) {
+                        border-top-right-radius: 0;
+                    }
+                    &:nth-child(4) {
+                        border-top-left-radius: 0;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 60%;
+                        width: 50%;
+                        border: 10px solid #e3e0ff;
+                        z-index: -1;
+                    }
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        object-fit: contain;
+                    }
+                    span {
+                        margin: 0.5rem 0;
+                        display: block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 100%;
+                    }
+                    ul {
+                        li {
+                            display: inline-block;
+                            a {
+                                height: 40px;
+                                width: 40px;
+                                background: #2d1863;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                font-size: 1.1rem;
+                                color: #fed553;
+                                margin: 5px;
+                                justify-content: center;
                             }
                         }
                     }

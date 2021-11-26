@@ -1,295 +1,265 @@
-* {
-  transition: all 0.2s;
-}
-body {
-  overflow-x: hidden;
+// * {
+//   transition: all 0.2s;
+// }
+// body {
+//   overflow-x: hidden;
+// }
+
+// @media (max-width: 1399.98px) {
+// }
+// @media (max-width: 1199.98px) {
+//   .container {
+//     .third {
+//       .backbox {
+//         .exps {
+//           position: static;
+//         }
+//         .exp1 {
+//           top: -30%;
+//           left: 50px;
+//         }
+//         .exp2 {
+//           right: 50px;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 991.98px) {
+// }
+// @media (max-width: 767.98px) {
+//   .container {
+//     .header {
+//       .menudiv {
+//         ul {
+//           display: none;
+//         }
+//         i {
+//           display: block;
+//         }
+//       }
+//     }
+//     .leftright {
+//       height: auto !important;
+//       .left {
+//         width: 100% !important;
+//         .bgshape {
+//           img {
+//             display: none;
+//           }
+//         }
+//       }
+//       .right {
+//         img {
+//           display: none;
+//         }
+//       }
+//     }
+//     .second_lfri {
+//       .second_left {
+//         width: 100%;
+//         height: 350px;
+//         .boxdiv {
+//           .backbox {
+//             height: 225px;
+//             .eduction1 {
+//               bottom: 27px;
+//             }
+//             .eduction2 {
+//               top: 25px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .skills {
+//       .skillscircle {
+//         justify-content: space-around;
+//         .card {
+//           h2 {
+//             margin-top: 0px;
+//           }
+//           margin: 1rem;
+//           &:hover {
+//             .percent {
+//               .number {
+//                 h2 {
+//                   font-size: 45px;
+//                 }
+//               }
+//             }
+//           }
+
+//           .percent {
+//             svg {
+//               circle {
+//                 r: 50;
+//                 stroke-width: 7px;
+//               }
+//             }
+//             .number {
+//               h2 {
+//                 font-size: 30px;
+//               }
+//             }
+//           }
+//           &:nth-child(1) svg circle:nth-child(2) {
+//             stroke-dashoffset: 157 !important;
+//           }
+//           &:nth-child(2) svg circle:nth-child(2) {
+//             stroke-dashoffset: 157 !important;
+//           }
+//           &:nth-child(3) svg circle:nth-child(2) {
+//             stroke-dashoffset: 157 !important;
+//           }
+//           &:nth-child(4) svg circle:nth-child(2) {
+//             stroke-dashoffset: 157 !important;
+//           }
+//           &:nth-child(5) svg circle:nth-child(2) {
+//             stroke-dashoffset: 172.2 !important;
+//           }
+//           &:nth-child(6) svg circle:nth-child(2) {
+//             stroke-dashoffset: 172.2 !important;
+//           }
+//           &:nth-child(7) svg circle:nth-child(2) {
+//             stroke-dashoffset: 180.55 !important;
+//           }
+//           &:nth-child(8) svg circle:nth-child(2) {
+//             stroke-dashoffset: 180.55 !important;
+//           }
+//           &:nth-child(9) svg circle:nth-child(2) {
+//             stroke-dashoffset: 180.55 !important;
+//           }
+//           &:nth-child(10) svg circle:nth-child(2) {
+//             stroke-dashoffset: 180.55 !important;
+//           }
+//           &:nth-child(11) svg circle:nth-child(2) {
+//             stroke-dashoffset: 180.55 !important;
+//           }
+//         }
+//         img {
+//           display: none !important;
+//           right: 0px !important;
+//         }
+//       }
+//     }
+//     .third {
+//       flex-wrap: wrap;
+//       height: auto !important;
+//       .thirdl {
+//         width: 100% !important;
+//         min-height: 350px !important;
+//         .left {
+//           width: auto !important;
+//         }
+//       }
+//       .thirdr {
+//         width: 100% !important;
+//         height: 100% !important;
+//         .boxdiv {
+//           .backbox {
+//             height: 300px !important;
+//             .exp1 {
+//               bottom: 25px !important;
+//             }
+//             .exp2 {
+//               top: 25px !important;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .forth {
+//       .portfolio_content {
+//         .pbox {
+//           height: auto !important;
+//           .bgbox {
+//             display: flex !important;
+//             width: 100% !important;
+//             height: 100% !important;
+//             flex-wrap: wrap !important;
+//             justify-content: space-around !important;
+//             align-items: center !important;
+//             margin-top: 25px !important;
+//             border: none !important;
+//             .project_1 {
+//               position: static !important;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//             .project_2 {
+//               position: static !important ;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//             .project_3 {
+//               position: static !important;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//             .project_4 {
+//               position: static !important;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//             .project_5 {
+//               position: static !important;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//             .project_6 {
+//               position: static !important;
+//               margin-bottom: 25px !important;
+//               &:hover {
+//                 -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .get_in_touch {
+//       flex-wrap: wrap;
+//       height: auto !important;
+//       .left {
+//         width: 100% !important;
+//         height: 320px !important;
+//         padding-top: 100px !important;
+//       }
+//       .right {
+//         width: 100% !important;
+//       }
+//     }
+//   }
+// }
+
+.mainTitle {
+  text-align: center;
+  h3 {
+    color: #2d1863;
+    font-weight: 500;
+    margin-bottom: 15px;
+    border-left: 3px solid #fbdb71;
+    padding-left: 1rem;
+    font-size: 35px;
+    display: inline-block;
+  }
 }
 
-@media (max-width: 1399.98px) {
+.align-left {
+  text-align: start;
 }
-@media (max-width: 1199.98px) {
-  .container {
-    .third {
-      .backbox {
-        .exps {
-          position: static;
-        }
-        .exp1 {
-          top: -30%;
-          left: 50px;
-        }
-        .exp2 {
-          right: 50px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 991.98px) {
-}
-@media (max-width: 767.98px) {
-  .container {
-    .header {
-      .menudiv {
-        ul {
-          display: none;
-        }
-        i {
-          display: block;
-        }
-      }
-    }
-    .leftright {
-      height: auto !important;
-      .left {
-        width: 100% !important;
-        .bgshape {
-          img {
-            display: none;
-          }
-        }
-      }
-      .right {
-        img {
-          display: none;
-        }
-      }
-    }
-    .second_lfri {
-      flex-wrap: wrap;
-      flex-flow: column-reverse;
-      .second_left {
-        width: 100% !important;
-        height: 350px !important;
-        .boxdiv {
-          .backbox {
-            height: 225px !important;
-            .eduction1 {
-              bottom: 27px !important;
-            }
-            .eduction2 {
-              top: 25px !important;
-            }
-          }
-        }
-      }
-    }
-    .skills {
-      .skillscircle {
-        justify-content: space-around;
-        .card {
-          h2 {
-            margin-top: 0px;
-          }
-          margin: 1rem !important;
-          &:hover {
-            .percent {
-              .number {
-                h2 {
-                  font-size: 45px;
-                }
-              }
-            }
-          }
 
-          .percent {
-            svg {
-              circle {
-                r: 50 !important;
-                stroke-width: 7px !important;
-              }
-            }
-            .number {
-              h2 {
-                font-size: 30px;
-              }
-            }
-          }
-          &:nth-child(1) svg circle:nth-child(2) {
-            stroke-dashoffset: 157 !important;
-          }
-          &:nth-child(2) svg circle:nth-child(2) {
-            stroke-dashoffset: 157 !important;
-          }
-          &:nth-child(3) svg circle:nth-child(2) {
-            stroke-dashoffset: 157 !important;
-          }
-          &:nth-child(4) svg circle:nth-child(2) {
-            stroke-dashoffset: 157 !important;
-          }
-          &:nth-child(5) svg circle:nth-child(2) {
-            stroke-dashoffset: 172.2 !important;
-          }
-          &:nth-child(6) svg circle:nth-child(2) {
-            stroke-dashoffset: 172.2 !important;
-          }
-          &:nth-child(7) svg circle:nth-child(2) {
-            stroke-dashoffset: 180.55 !important;
-          }
-          &:nth-child(8) svg circle:nth-child(2) {
-            stroke-dashoffset: 180.55 !important;
-          }
-          &:nth-child(9) svg circle:nth-child(2) {
-            stroke-dashoffset: 180.55 !important;
-          }
-          &:nth-child(10) svg circle:nth-child(2) {
-            stroke-dashoffset: 180.55 !important;
-          }
-          &:nth-child(11) svg circle:nth-child(2) {
-            stroke-dashoffset: 180.55 !important;
-          }
-        }
-        img {
-          display: none !important;
-          right: 0px !important;
-        }
-      }
-    }
-    .third {
-      flex-wrap: wrap;
-      height: auto !important;
-      .thirdl {
-        width: 100% !important;
-        min-height: 350px !important;
-        .left {
-          width: auto !important;
-        }
-      }
-      .thirdr {
-        width: 100% !important;
-        height: 100% !important;
-        .boxdiv {
-          .backbox {
-            height: 300px !important;
-            .exp1 {
-              bottom: 25px !important;
-            }
-            .exp2 {
-              top: 25px !important;
-            }
-          }
-        }
-      }
-    }
-    .forth {
-      .portfolio_content {
-        .pbox {
-          height: auto !important;
-          .bgbox {
-            display: flex !important;
-            width: 100% !important;
-            height: 100% !important;
-            flex-wrap: wrap !important;
-            justify-content: space-around !important;
-            align-items: center !important;
-            margin-top: 25px !important;
-            border: none !important;
-            .project_1 {
-              position: static !important;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-            .project_2 {
-              position: static !important ;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-            .project_3 {
-              position: static !important;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-            .project_4 {
-              position: static !important;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-            .project_5 {
-              position: static !important;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-            .project_6 {
-              position: static !important;
-              margin-bottom: 25px !important;
-              &:hover {
-                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-              }
-            }
-          }
-        }
-      }
-    }
-    .get_in_touch {
-      flex-wrap: wrap;
-      height: auto !important;
-      .left {
-        width: 100% !important;
-        height: 320px !important;
-        padding-top: 100px !important;
-      }
-      .right {
-        width: 100% !important;
-      }
-    }
-  }
-}
-@media (max-width: 575.98px) {
-  .heading {
-    font-size: 25px !important;
-  }
-  .container {
-    .educationh {
-      display: inline-block;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .leftright {
-      .left {
-        .content {
-          .text {
-            .name {
-              font-size: 30px !important;
-            }
-          }
-        }
-      }
-    }
-    .second_lfri {
-      padding: 0 24px 24px 24px;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
-      height: auto !important;
-      .second_right {
-        height: auto !important;
-        .collage {
-          width: auto !important;
-          height: auto !important;
-          .text {
-            .collage_name {
-              span {
-                font-size: 23px !important;
-              }
-            }
-          }
-        }
-      }
-      .second_left {
-        height: auto !important;
-      }
-    }
-  }
+.align-center {
+  text-align: center;
 }

@@ -8,6 +8,10 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ecf8ff;
+  overflow-x: hidden;
+}
+#root {
+  overflow-x: hidden;
 }
 /* *:focus{
 cursor: none ;
@@ -37,6 +41,7 @@ h5 {
 }
 section {
   position: relative;
+  padding: 50px 0;
 }
 .container {
   max-width: 1140px;
@@ -56,7 +61,10 @@ section {
   border-radius: 1rem 1rem 0 1rem;
   text-align: center;
 }
+
 .animationbox {
+  width: 280px;
+  height: 235px;
   box-sizing: border-box;
   background-color: white;
   border-radius: 1rem;

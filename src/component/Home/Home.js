@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'react-scroll'
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 import '../../App.css'
@@ -45,8 +46,8 @@ function Home() {
 
   return (
     <div>
-      <Header />
-      <section>
+
+      <section id="home">
         <div className="container">
           <div className="leftright">
             <div className="left">
@@ -73,9 +74,9 @@ function Home() {
         </div>
       </section>
 
-      <section >
+      <section id="eduction" >
         <div className="container">
-          <div className="mainTitle align-left">
+          <div className="mainTitle align-left center">
             <h3>Education</h3>
           </div>
           <div className="second_lfri">
@@ -84,12 +85,12 @@ function Home() {
               <div className="boxdiv">
                 <div className="backbox">
 
-                  <div onClick={handleeducation1} className="eduction1 whitebox">
-                    <img className="lambtonimage" src="./Assest/collagelogo/lambton.png" alt="" />
+                  <div onClick={handleeducation1} className="eduction1 whitebox education">
+                    <img className="lambtonimage collagediv" src="./Assest/collagelogo/lambton.png" alt="" />
                     <span>Lambton College</span>
                   </div>
-                  <div onClick={handleeducation2} className="eduction2 whitebox">
-                    <img className="guniversity" src="./Assest/collagelogo/GNU.png" alt="" />
+                  <div onClick={handleeducation2} className="eduction2 whitebox education">
+                    <img className="guniversity collagediv" src="./Assest/collagelogo/GNU.png" alt="" />
                     <span>Ganpat University</span>
                   </div>
 
@@ -98,7 +99,7 @@ function Home() {
 
             </div>
             <div className="second_right" >
-              <div className="collage" style={{ display: div ? "block" : "none", margin: "25px" }}>
+              <div className="collage" style={{ display: div ? "block" : "none", margin: "25px 5px 5px" }}>
 
                 <div className="text">
 
@@ -106,7 +107,7 @@ function Home() {
                     <img className="clogo" src="./Assest/collagelogo/lambton.png" alt="" />
                     <span className="name">
 
-                      " Lambton College"
+                      Lambton College
                       <sup>Pursuing</sup>
                       (Sept 2020 - April 2022)
 
@@ -130,13 +131,13 @@ function Home() {
 
 
               </div>
-              <div style={{ display: div ? "none" : "block", margin: "25px" }}> <div className="text">
+              <div className="collage" style={{ display: div ? "none" : "block", margin: "25px 5px 5px" }}> <div className="text">
 
                 <div className="collage_name" >
                   <img className="clogo" src="./Assest/collagelogo/GNU.png" alt="" />
                   <span className="name">
 
-                    " Ganpat University (July 2015 - May 2019)"
+                    Ganpat University (July 2015 - May 2019)
 
                   </span>
                 </div>
@@ -155,14 +156,15 @@ function Home() {
 
                 </ul>
 
-              </div></div>
+              </div>
+              </div>
             </div>
 
           </div>
         </div>
       </section>
 
-      <section >
+      <section id="skills">
         <div className="container">
           <div className="skills">
             <span className="heading">My Skills</span>
@@ -331,13 +333,13 @@ function Home() {
 
       </section>
 
-      <section >
+      <section id="experince">
         <div className="container">
-          <div className="mainTitle align-left">
+          <div className="mainTitle align-left center">
             <h3>Experiance</h3>
           </div>
           <div className="third">
-            <div className="thirdl">
+            <div className="thirdl" id="third">
               <div className="left" style={{ display: exp ? 'block' : 'none', margin: "25px", padding: "0 1rem" }}>
                 <div className="text">
 
@@ -378,7 +380,9 @@ function Home() {
                 </div>
                 <span>Software Developer <br />(Jan 2019 - Jan 2020)</span>
                 <div className="buttondiv">
-                  <button className="contactme" onClick={handlecompony1}>View Details</button>
+                  <Link to="third" spy={true}>
+                    <button className="contactme" onClick={handlecompony1}>View Details </button>
+                  </Link>
                 </div>
                 <img className="bgshapedot" src="./Assest/bgshape/shape4.png" alt="" />
               </div>
@@ -389,7 +393,9 @@ function Home() {
                 </div>
                 <span>Salesforce Developer - <br /> Intern (May 2018 - Dec 2018)</span>
                 <div className="buttondiv">
-                  <button className="contactme" onClick={handlecompony2}>View Details</button>
+                  <Link to="third" spy={true}>
+                    <button className="contactme" onClick={handlecompony2}>View Details</button>
+                  </Link>
                 </div>
                 <img className="bgshapedot" src="./Assest/bgshape/shape4.png" alt="" />
               </div>
@@ -399,7 +405,7 @@ function Home() {
 
       </section>
 
-      <section className="container">
+      <section id="portfolio" >
         <div className="container">
           <div className="forth">
             <div className="portfolio_header">
@@ -415,7 +421,7 @@ function Home() {
               <div style={{ display: projects ? 'none' : 'block' }}>
                 <div className="pbox">
                   <div className="bgbox">
-                    <div className="project_1 animationbox">
+                    <div className="project_1 animationbox position">
                       <img src="./Assest/projects/p1.png" alt="Portfolio Item" />
                       <figcaption>
                         <h4>MyCoVTest Hub (2021)</h4>
@@ -426,7 +432,7 @@ function Home() {
                         </div>
                       </figcaption>
                     </div>
-                    <div className="project_2 animationbox">
+                    <div className="project_2 animationbox position">
                       <img src="./Assest/projects/p2.png" alt="Portfolio Item" />
                       <figcaption>
                         <h4>Cars Here (2020)</h4>
@@ -439,7 +445,7 @@ function Home() {
                         </div>
                       </figcaption>
                     </div>
-                    <div className="project_3 animationbox">
+                    <div className="project_3 animationbox position">
                       <img src="./Assest/projects/p3.png" alt="Portfolio Item" />
                       <figcaption>
                         <h4>Shoppy (2020)</h4>
@@ -455,7 +461,7 @@ function Home() {
 
 
                     </div>
-                    <div className="project_4 animationbox">
+                    <div className="project_4 animationbox position">
                       <img src="./Assest/projects/p4.png" alt="Portfolio Item" />
                       <figcaption>
                         <h4>Cake Shop (2019)</h4>
@@ -475,7 +481,7 @@ function Home() {
 
 
                     </div>
-                    <div className="project_5 animationbox">
+                    <div className="project_5 animationbox position">
                       <img src="./Assest/projects/p5.gif" alt="Portfolio Item" />
                       <figcaption>
                         <h4>Snapkart Portfolio (2017)</h4>
@@ -492,7 +498,7 @@ function Home() {
 
 
                     </div>
-                    <div className="project_6 animationbox">
+                    <div className="project_6 animationbox position">
                       <img src="./Assest/projects/p6.gif" alt="Portfolio Item" />
                       <figcaption>
                         <h4>BELL BOY (2021)</h4>
@@ -532,9 +538,9 @@ function Home() {
         </div>
       </section>
 
-      <section ref={myRef} >
+      <section ref={myRef} id="contact" >
         <div className="container" >
-          <div className="mainTitle align-center">
+          <div className="mainTitle align-left">
             <h3>Get in touch</h3>
           </div>
           <div className="get_in_touch">
@@ -617,8 +623,6 @@ function Home() {
 
 
       </section>
-
-      <Footer />
     </div>
   )
 }

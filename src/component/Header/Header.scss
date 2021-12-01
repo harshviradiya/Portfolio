@@ -1,62 +1,135 @@
+// .container{
+//     .main_header{
+//         position: relative;
+//         .header{
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             padding-top: 20px;
+//         }
+//             .menudiv ul li{
+//             display: inline-block;
+//             list-style: none;
+//             padding-left: 15px;
+//             font-size: 1.1rem;
+//             color: #989ab6;
+//             font-weight: 500;
+//             padding:5px;
+//             margin-left:15px;
+//             cursor:pointer;
+//         }
+//         .menudiv{
+//             display: flex;
+//             text-align: center;
+//             /* align-items: baseline; */
+//             align-items: center;
+//         }
 
-.container{
-    .main_header{
-        position: relative;
-        .header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 20px;
+//         .menudiv ul .activeBtn{
+//             border-bottom: 3px solid #f9d051;
+//             color: #7a27f6;
+//         }
+//         .menudiv i{
+//             display:none
+//         }
+
+//            .header2{
+//                display: block;
+//                position: absolute;
+//                top: 100%;
+//                left: 0;
+//                width: 100%;
+//                background-color: white;
+//                z-index: 9999;
+//                .menudiv{
+//                    width: 100%;
+//                    ul{
+//                        width: 100%;
+//                        li{
+//                         display: block;
+//                         padding: 1rem;
+//                         text-align: center;
+//                        }
+//                    }
+//                }
+//            }
+//            .header3{
+//             display: none;
+//            }
+//         }
+//     }
+.MainHeader {
+    // box-shadow: 0 2px 2px rgb(0, 0, 0.06);
+    box-shadow: 13px -8px 20px 0px black;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #eef6fe;
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+
+        .logo {
+            width: 20%;
+            margin-left: 20px;
+            h3 {
+                color: #444;
+                letter-spacing: 0.9px;
+                span {
+                    color: #6f34fe;
+                    font-weight: 600;
+                }
+            }
         }
-            .menudiv ul li{
-            display: inline-block;
-            list-style: none;
-            padding-left: 15px;
-            font-size: 1.1rem;
-            color: #989ab6;
-            font-weight: 500;
-            padding:5px;
-            margin-left:15px;
-            cursor:pointer;
-        }
-        .menudiv{
-            display: flex;
-            text-align: center;
-            /* align-items: baseline; */
-            align-items: center;
-        }
-        
-        .menudiv ul .activeBtn{
-            border-bottom: 3px solid #f9d051;
-            color: #7a27f6;
-        }
-        .menudiv i{
-            display:none
-        }
-        
-        
-           .header2{
-               display: block;
-               position: absolute;
-               top: 100%;
-               left: 0;
-               width: 100%;
-               background-color: white;
-               z-index: 9999;
-               .menudiv{
-                   width: 100%;
-                   ul{
-                       width: 100%;
-                       li{
+        .MenuList {
+            width: 80%;
+            text-align: end;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
                         display: block;
-                        padding: 1rem;
-                        text-align: center;
-                       }
-                   }
-               }
-           }
-           .header3{
+                        padding: 0.7rem 0.4rem;
+                        font-size: 1rem;
+                        color: #7e8085;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                        cursor: pointer;
+                        position: relative;
+                        transition: all 0.3s;
+                        margin: 0 0.3rem;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 3px;
+                            background: #ffd43a;
+                            width: 0%;
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            color: #6f34fe;
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .activeMenu {
+                    a {
+                        color: #6f34fe;
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .smMenuList {
             display: none;
-           }
         }
     }
+}

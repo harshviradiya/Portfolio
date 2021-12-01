@@ -3,13 +3,13 @@
         display: flex;
         height: auto;
         justify-content: space-between;
-
+        margin-top: 80px;
         position: relative;
         .left {
             width: 60%;
             .content {
-                margin: 10px 0 10px 10px;
-                padding: 0 3rem;
+                // margin: 10px 0 10px 10px;
+                padding: 0 1rem;
                 .text {
                     margin-bottom: 50px;
                     span {
@@ -111,7 +111,7 @@
             }
         }
         .second_right {
-            // min-height: 595px;
+            width: 50%;
             .text {
                 h4 {
                     border-bottom: 3px solid #e3e0ff;
@@ -327,6 +327,11 @@
             .card {
                 text-align: center;
                 width: 165px;
+                &:hover {
+                    .text {
+                        color: #1c4547;
+                    }
+                }
             }
             .shapeimage {
                 position: absolute;
@@ -341,28 +346,28 @@
             width: 900px;
             display: flex;
             justify-content: space-around;
-        }
-        .container .card {
-            position: relative;
-            width: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-            border-radius: 4px;
-            text-align: center;
-            overflow: hidden;
-            transition: 0.5s;
-        }
-        .container .card:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
+            .card {
+                position: relative;
+                width: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                border-radius: 4px;
+                text-align: center;
+                overflow: hidden;
+                transition: 0.5s;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -50%;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    z-index: 1;
+                }
+            }
         }
         .percent {
             position: relative;
@@ -371,31 +376,31 @@
             border-radius: 50%;
             z-index: 1000;
             margin: 0 auto;
-        }
-        .percent .number {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-        .percent .number h2 {
-            color: #3ab3ba;
-            font-weight: 700;
-            font-size: 40px;
-            transition: 0.5s;
+            .number {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                h2 {
+                    color: #3ab3ba;
+                    font-weight: 700;
+                    font-size: 40px;
+                    transition: 0.5s;
+                    span {
+                        font-size: 24px;
+                        color: #3ab3ba;
+                    }
+                }
+            }
         }
         .card:hover .percent .number h2 {
             color: #1c4547;
             font-size: 60px;
-        }
-        .percent .number h2 span {
-            font-size: 24px;
-            color: #3ab3ba;
         }
         .card:hover .percent .number h2 span {
             color: #1c4547;
@@ -411,27 +416,24 @@
             text-transform: uppercase;
             transition: 0.5s;
         }
-        .card:hover .text {
-            color: #1c4547;
-        }
         svg {
             position: relative;
             width: 150px;
             height: 150px;
             z-index: 1000;
-        }
-        svg circle {
-            width: 100%;
-            height: 100%;
-            fill: none;
-            stroke: #bcb6ef;
-            stroke-width: 10;
-            stroke-linecap: round;
-            transform: translate(5px, 5px);
-        }
-        svg circle:nth-child(2) {
-            stroke-dasharray: 440;
-            stroke-dashoffset: 440;
+            circle {
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #bcb6ef;
+                stroke-width: 10;
+                stroke-linecap: round;
+                transform: translate(5px, 5px);
+                &:nth-child(2) {
+                    stroke-dasharray: 440;
+                    stroke-dashoffset: 440;
+                }
+            }
         }
         .card:nth-child(1) svg circle:nth-child(2) {
             stroke-dashoffset: calc(440 - (440 * 90) / 100);
@@ -516,208 +518,52 @@
                     height: 250px;
                     position: relative;
                     .project_1 {
-                        width: 280px;
-                        height: 235px;
                         position: absolute;
                         bottom: 200px;
                         left: -160px;
-                    }
-                    .project_1:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
-                    }
-                    img {
-                        background-color: #222;
-                        // box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
-                        display: block;
-                        height: 100%;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_1:hover img {
-                        box-shadow: none;
-                    }
-                    figcaption {
-                        p {
-                            font-size: 11px;
-                        }
-                        span {
-                            margin-top: 5px;
-                            font-size: 11px;
-                        }
-                        h4 {
-                            margin-bottom: 10px;
-                        }
-                        .buttondiv {
-                            margin-top: 15px;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
                         }
                     }
-                    .project_1:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
-                    }
-
                     .project_2 {
                         position: absolute;
                         bottom: 200px;
                         left: 225px;
-                    }
-                    .project_2:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
-                    }
-                    img {
-                        background-color: #222;
-                        // box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
-                        display: block;
-                        height: 100%;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_2:hover img {
-                        box-shadow: none;
-                    }
-                    figcaption {
-                        p {
-                            font-size: 11px;
-                        }
-                        span {
-                            margin-top: 5px;
-                            font-size: 11px;
-                        }
-                        h4 {
-                            margin-bottom: 10px;
-                        }
-                        .buttondiv {
-                            margin-top: 15px;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
                         }
                     }
-                    .project_2:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
-                    }
-
                     .project_3 {
                         position: absolute;
                         bottom: 200px;
                         right: -160px;
-                    }
-                    .project_3:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
-                    }
-                    img {
-                        background-color: #222;
-                        display: block;
-                        height: 100%;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_3:hover img {
-                        box-shadow: none;
-                    }
-                    figcaption {
-                        p {
-                            font-size: 11px;
-                        }
-                        span {
-                            margin-top: 5px;
-                            font-size: 11px;
-                        }
-                        h4 {
-                            margin-bottom: 10px;
-                        }
-                        .buttondiv {
-                            margin-top: 15px;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(5em);
                         }
                     }
-                    .project_3:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
-                    }
-
                     .project_4 {
                         position: absolute;
                         top: 200px;
                         left: -160px;
-                    }
-                    .project_4:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
-                    }
-                    img {
-                        background-color: #222;
-                        // box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
-                        display: block;
-                        height: 100%;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_4:hover img {
-                        box-shadow: none;
-                    }
-                    figcaption {
-                        p {
-                            font-size: 11px;
-                        }
-                        span {
-                            margin-top: 5px;
-                            font-size: 11px;
-                        }
-                        h4 {
-                            margin-bottom: 10px;
-                        }
-                        .buttondiv {
-                            margin-top: 15px;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
                         }
                     }
-                    .project_4:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
-                    }
-
                     .project_5 {
                         position: absolute;
                         top: 200px;
                         left: 225px;
-                    }
-                    .project_5:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
-                    }
-                    img {
-                        background-color: #222;
-                        display: block;
-                        height: 100%;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_5:hover img {
-                        box-shadow: none;
-                    }
-                    figcaption {
-                        p {
-                            font-size: 11px;
-                        }
-                        span {
-                            margin-top: 5px;
-                            font-size: 11px;
-                        }
-                        h4 {
-                            margin-bottom: 10px;
-                        }
-                        .buttondiv {
-                            margin-top: 15px;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
                         }
                     }
-                    .project_5:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
-                    }
-
                     .project_6 {
                         position: absolute;
                         top: 200px;
                         right: -160px;
-                    }
-                    .project_6:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
-                    }
-                    img {
-                        background-color: #222;
-                        display: block;
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        -webkit-transition: 0.5s;
-                    }
-                    .project_6:hover img {
-                        box-shadow: none;
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(10em);
+                        }
                     }
                     figcaption {
                         p {
@@ -733,9 +579,15 @@
                         .buttondiv {
                             margin-top: 15px;
                         }
+                        &:hover {
+                            box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+                        }
                     }
-                    .project_6:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+                    img {
+                        background-color: #222;
+                        display: block;
+                        height: 100%;
+                        -webkit-transition: 0.5s;
                     }
                 }
             }
@@ -746,15 +598,15 @@
                 height: 350px;
                 .bgcbox {
                     border: 10px solid #e3e0ff;
-                    width: 350px;
-                    height: 150px;
+                    width: 125px;
+                    height: 300px;
                     position: relative;
                     .clone_1 {
-                        width: 280px;
+                        width: 225px;
                         height: 235px;
                         position: absolute;
-                        bottom: -42.5px;
-                        left: 35px;
+                        bottom: 32.5px;
+                        left: -49px;
                         box-sizing: border-box;
                         background-color: white;
                         border-radius: 1rem;
@@ -762,18 +614,15 @@
                         -webkit-transform: perspective(500);
                         -webkit-transform-style: preserve-3d;
                         -webkit-transition: 0.5s;
-                    }
-                    .clone_1:hover {
-                        -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(7.5em);
+                        &:hover {
+                            -webkit-transform: perspective(500) rotateX(90deg) translateY(-5em) translateZ(7.5em);
+                        }
                     }
                     img {
                         background-color: #222;
                         display: block;
                         height: 100%;
                         -webkit-transition: 0.5s;
-                    }
-                    .clone_1:hover img {
-                        box-shadow: none;
                     }
                     figcaption {
                         p {
@@ -789,18 +638,13 @@
                         .buttondiv {
                             margin-top: 15px;
                         }
-                    }
-                    .clone_1:hover figcaption {
-                        box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+                        &:hover {
+                            box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, 0.25);
+                        }
                     }
                 }
             }
         }
-    }
-    .git_t {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
     }
     .get_in_touch {
         display: flex;
@@ -898,7 +742,6 @@
                     }
                 }
             }
-
             .touch-details {
                 display: flex;
                 flex-wrap: wrap;
@@ -995,8 +838,6 @@
                     min-height: 100px;
                     border-radius: 10px;
                 }
-            }
-            .buttondiv {
             }
         }
     }

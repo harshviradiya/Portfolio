@@ -3,17 +3,16 @@ import './footer.scss'
 
 export default function Footer() {
   return (
-    <div className="container" id="footer">
-      <div className="footer">
-        <img src="./Assest/bgshape/logo.PNG" alt="" />
-        <div className="menudiv">
-          <ul>
-            <li>© Untitled. All rights reserved.</li>
-            <li className="text">Design and Developed by Jemish Viradiya</li>
-
-          </ul>
-        </div>
-      </div>
+    <div className="footer">
+      <footer>
+        <h2>
+          P<span>o</span>rtf<span>o</span>li<span>o</span>
+        </h2>
+        <h6>
+          &copy; Untitled. All rights reserved. | Design and Development by
+          Jemish Viradiya
+        </h6>
+      </footer>
     </div>
   )
 }

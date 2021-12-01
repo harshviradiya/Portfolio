@@ -1,5 +1,3 @@
-@media (max-width: 1399.98px) {
-}
 @media (max-width: 1199.98px) {
     section {
         padding: 40px 0;
@@ -116,229 +114,290 @@
     }
 }
 @media (max-width: 767.98px) {
-    section {
-        padding: 25px 0;
-    }
-    .container {
-        .header {
-            .menudiv {
-                ul {
+    .MainHeader {
+        // max-width: 720px;
+        nav {
+            position: relative;
+            .MenuList {
+                display: none;
+            }
+            .logo {
+                width: 50%;
+            }
+            .smMenuList {
+                width: 50%;
+                display: block;
+                text-align: end;
+                button {
+                    background: none;
+                    border: none;
+                    font-size: 1.3rem;
+                    color: var(--bg-perpule);
+                }
+                .Hide {
                     display: none;
                 }
-                i {
+                .Show {
                     display: block;
+                    position: absolute;
+                    width: 95%;
+                    left: 2.5%;
+                    top: 100%;
+                    text-align: center;
+                    background: #6f34fe;
+                    z-index: 11;
+                    border-radius: 1rem;
+                    li {
+                        padding: 0.8rem;
+                        font-size: 1.1rem;
+                        color: #fff;
+                        transition: all 0.1s;
+                        cursor: pointer;
+                        &:hover {
+                            letter-spacing: 0.2rem;
+                        }
+                    }
                 }
             }
         }
-        .leftright {
-            height: auto;
-            .left {
-                width: 100%;
-                .bgshape {
+    }
+    section {
+        padding: 25px 0;
+        .container {
+            max-width: 95%;
+            .leftright {
+                height: auto;
+                .left {
+                    width: 100%;
+                    .bgshape {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .content {
+                        .buttondiv {
+                            display: flex;
+                        }
+                    }
+                }
+                .right {
                     img {
                         display: none;
                     }
                 }
             }
-            .right {
-                img {
-                    display: none;
-                }
-            }
-        }
-        .second_lfri {
-            flex-wrap: wrap;
-            .second_left {
-                width: 100%;
-                height: 350px;
-                .boxdiv {
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 3rem;
-                    .backbox {
-                        height: 225px;
-                        .eduction1 {
-                            bottom: 27px;
-                        }
-                        .eduction2 {
-                            top: 25px;
+            .second_lfri {
+                flex-wrap: wrap;
+                .second_left {
+                    width: 100%;
+                    // height: 350px;
+                    .boxdiv {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 3rem;
+                        .backbox {
+                            height: 225px;
+                            .eduction1 {
+                                bottom: 27px;
+                            }
+                            .eduction2 {
+                                top: 25px;
+                            }
                         }
                     }
                 }
-            }
-            .second_right {
-                width: 100%;
-                .collage {
-                    // width: 100%;
+                .second_right {
+                    width: 100%;
                 }
             }
-        }
-        .skills {
-            .skillscircle {
-                justify-content: space-around;
-                .card {
-                    h2 {
-                        margin-top: 0px;
-                    }
-                    margin: 1rem !important;
-                    &:hover {
+            .skills {
+                .skillscircle {
+                    justify-content: space-around;
+                    .card {
+                        h2 {
+                            margin-top: 0px;
+                        }
+                        margin: 1rem !important;
+                        &:hover {
+                            .percent {
+                                .number {
+                                    h2 {
+                                        font-size: 45px;
+                                    }
+                                }
+                            }
+                        }
+
                         .percent {
+                            svg {
+                                circle {
+                                    r: 50 !important;
+                                    stroke-width: 7px !important;
+                                }
+                            }
                             .number {
                                 h2 {
-                                    font-size: 45px;
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                        &:nth-child(1) svg circle:nth-child(2) {
+                            stroke-dashoffset: 157 !important;
+                        }
+                        &:nth-child(2) svg circle:nth-child(2) {
+                            stroke-dashoffset: 157 !important;
+                        }
+                        &:nth-child(3) svg circle:nth-child(2) {
+                            stroke-dashoffset: 157 !important;
+                        }
+                        &:nth-child(4) svg circle:nth-child(2) {
+                            stroke-dashoffset: 157 !important;
+                        }
+                        &:nth-child(5) svg circle:nth-child(2) {
+                            stroke-dashoffset: 172.2 !important;
+                        }
+                        &:nth-child(6) svg circle:nth-child(2) {
+                            stroke-dashoffset: 172.2 !important;
+                        }
+                        &:nth-child(7) svg circle:nth-child(2) {
+                            stroke-dashoffset: 180.55 !important;
+                        }
+                        &:nth-child(8) svg circle:nth-child(2) {
+                            stroke-dashoffset: 180.55 !important;
+                        }
+                        &:nth-child(9) svg circle:nth-child(2) {
+                            stroke-dashoffset: 180.55 !important;
+                        }
+                        &:nth-child(10) svg circle:nth-child(2) {
+                            stroke-dashoffset: 180.55 !important;
+                        }
+                        &:nth-child(11) svg circle:nth-child(2) {
+                            stroke-dashoffset: 180.55 !important;
+                        }
+                    }
+                    img {
+                        display: none !important;
+                        right: 0px !important;
+                    }
+                }
+            }
+            .third {
+                flex-wrap: wrap;
+                height: auto;
+                flex-direction: column-reverse;
+                .thirdl {
+                    width: 100%;
+                    // min-height: 350px;
+                    .left {
+                        width: auto;
+                    }
+                }
+                .thirdr {
+                    width: 100%;
+                    height: 100%;
+                    .boxdiv {
+                        .backbox {
+                            height: 300px;
+                            .exp1 {
+                                bottom: 25px;
+                            }
+                            .exp2 {
+                                top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .forth {
+                .portfolio_content {
+                    .pbox {
+                        height: auto !important;
+                        .bgbox {
+                            display: flex !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                            flex-wrap: wrap !important;
+                            justify-content: space-around !important;
+                            align-items: center !important;
+                            margin-top: 25px !important;
+                            border: none !important;
+                            .position {
+                                position: static !important;
+                                margin-bottom: 25px !important;
+                                &:hover {
+                                    -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em)
+                                        translateZ(7.5em) !important;
                                 }
                             }
                         }
                     }
-
-                    .percent {
-                        svg {
-                            circle {
-                                r: 50 !important;
-                                stroke-width: 7px !important;
-                            }
-                        }
-                        .number {
-                            h2 {
-                                font-size: 30px;
-                            }
-                        }
-                    }
-                    &:nth-child(1) svg circle:nth-child(2) {
-                        stroke-dashoffset: 157 !important;
-                    }
-                    &:nth-child(2) svg circle:nth-child(2) {
-                        stroke-dashoffset: 157 !important;
-                    }
-                    &:nth-child(3) svg circle:nth-child(2) {
-                        stroke-dashoffset: 157 !important;
-                    }
-                    &:nth-child(4) svg circle:nth-child(2) {
-                        stroke-dashoffset: 157 !important;
-                    }
-                    &:nth-child(5) svg circle:nth-child(2) {
-                        stroke-dashoffset: 172.2 !important;
-                    }
-                    &:nth-child(6) svg circle:nth-child(2) {
-                        stroke-dashoffset: 172.2 !important;
-                    }
-                    &:nth-child(7) svg circle:nth-child(2) {
-                        stroke-dashoffset: 180.55 !important;
-                    }
-                    &:nth-child(8) svg circle:nth-child(2) {
-                        stroke-dashoffset: 180.55 !important;
-                    }
-                    &:nth-child(9) svg circle:nth-child(2) {
-                        stroke-dashoffset: 180.55 !important;
-                    }
-                    &:nth-child(10) svg circle:nth-child(2) {
-                        stroke-dashoffset: 180.55 !important;
-                    }
-                    &:nth-child(11) svg circle:nth-child(2) {
-                        stroke-dashoffset: 180.55 !important;
-                    }
-                }
-                img {
-                    display: none !important;
-                    right: 0px !important;
                 }
             }
-        }
-        .third {
-            flex-wrap: wrap;
-            height: auto;
-            flex-direction: column-reverse;
-            .thirdl {
-                width: 100%;
-                min-height: 350px;
-                .left {
-                    width: auto;
-                }
-            }
-            .thirdr {
-                width: 100%;
-                height: 100%;
-                .boxdiv {
-                    .backbox {
-                        height: 300px;
-                        .exp1 {
-                            bottom: 25px;
-                        }
-                        .exp2 {
-                            top: 25px;
-                        }
-                    }
-                }
-            }
-        }
-        .forth {
-            .portfolio_content {
-                .pbox {
-                    height: auto !important;
-                    .bgbox {
-                        display: flex !important;
-                        width: 100% !important;
-                        height: 100% !important;
-                        flex-wrap: wrap !important;
-                        justify-content: space-around !important;
-                        align-items: center !important;
-                        margin-top: 25px !important;
-                        border: none !important;
-                        .project_1 {
-                            position: static !important;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                        .project_2 {
-                            position: static !important ;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                        .project_3 {
-                            position: static !important;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                        .project_4 {
-                            position: static !important;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                        .project_5 {
-                            position: static !important;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                        .project_6 {
-                            position: static !important;
-                            margin-bottom: 25px !important;
-                            &:hover {
-                                -webkit-transform: perspective(500) rotateX(90deg) translateY(-10em) translateZ(7.5em) !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .get_in_touch {
-            flex-wrap: wrap;
-            height: auto !important;
-            .left {
-                width: 100% !important;
+            .get_in_touch {
+                flex-wrap: wrap;
                 height: auto !important;
+                .left {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+                .right {
+                    width: 100% !important;
+                }
             }
-            .right {
-                width: 100% !important;
+        }
+    }
+    .MainHeader {
+        nav {
+            position: relative;
+            .MenuList {
+                display: none;
+            }
+            .logo {
+                width: 50%;
+            }
+            .smMenuList {
+                width: 50%;
+                display: block;
+                text-align: end;
+                button {
+                    background: none;
+                    border: none;
+                    font-size: 1.3rem;
+                    color: var(--bg-perpule);
+                }
+                .Hide {
+                    display: none;
+                }
+                .Show {
+                    display: block;
+                    position: absolute;
+                    width: 95%;
+                    left: 2.5%;
+                    top: 100%;
+                    text-align: center;
+                    background: #6f34fe;
+                    z-index: 11;
+                    border-radius: 1rem;
+                    li {
+                        padding: 0.8rem;
+                        font-size: 1.1rem;
+                        color: #fff;
+                        transition: all 0.1s;
+                        cursor: pointer;
+                        &:hover {
+                            letter-spacing: 0.2rem;
+                        }
+                    }
+                    .sm_activeMenu {
+                        a {
+                            color: #f9d051;
+                            // background-color: yellowgreen;
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -351,14 +410,6 @@
         font-size: 25px;
     }
     .container {
-        .educationh {
-            display: inline-block;
-            width: 100%;
-            align-items: center;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
         .leftright {
             .left {
                 .content {
@@ -370,65 +421,90 @@
                 }
             }
         }
-        .educationh {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
         .second_lfri {
             padding: 0 24px 24px 24px;
-            flex-wrap: wrap;
             flex-direction: row-reverse;
             height: auto;
+            .second_left {
+                // height: auto !important;
+                .boxdiv {
+                    .backbox {
+                        height: 180px !important;
+                        width: 120px !important;
+                        .eduction1 {
+                            bottom: 30px !important;
+                            right: 70px !important;
+                        }
+                        .eduction2 {
+                            top: 26px !important;
+                            left: 70px !important;
+                        }
+                        .education {
+                            width: 125px !important;
+                            height: 125px !important;
+                            .collagediv {
+                                object-fit: contain !important;
+                                height: 34% !important;
+                                margin: 10px !important;
+                                width: 34% !important;
+                            }
+                        }
+                    }
+                }
+            }
             .second_right {
                 height: auto;
                 .collage {
                     width: auto !important;
                     height: auto !important;
                     .text {
-                        .collage_name {
-                            span {
-                                font-size: 23px !important;
+                        ul {
+                            li {
+                                width: 50px;
+                                font-size: 11px;
                             }
+                        }
+                        .collage_name {
+                            width: 100%;
+                        }
+                        span {
+                            font-size: 16px !important;
                         }
                     }
-                }
-            }
-            .second_left {
-                height: auto !important;
-                .boxdiv {
-                    .backbox {
-                        height: 180px;
-                        width: 120px;
-                        .eduction1 {
-                            bottom: 30px;
-                            width: 125px;
-                            height: 125px;
-                            right: 70px;
-                            .lambtonimage {
-                                height: 34%;
-                                margin: 10px;
-                                width: 34%;
-                                object-fit: cover;
-                            }
-                        }
-                        .eduction2 {
-                            width: 125px;
-                            height: 125px;
-                            top: 26px;
-                            left: 70px;
-                            .guniversity {
-                                object-fit: contain;
-                                height: 34%;
-                                margin: 10px;
-                                width: 34%;
-                            }
-                        }
+                    h4 {
+                        font-size: 12px;
                     }
                 }
             }
         }
         .third {
             margin-top: 1rem;
+            .thirdl {
+                .text {
+                    .collage_name {
+                        display: block !important;
+                        text-align: center;
+                        img {
+                            width: 20% !important;
+                        }
+                        span {
+                            font-size: 19px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .forth {
+            .portfolio_header {
+                display: block;
+                margin-bottom: 15px;
+                .align-left {
+                    text-align: center;
+                }
+                .option {
+                    text-align: center;
+                }
+            }
         }
         .get_in_touch {
             .left {
@@ -449,8 +525,9 @@
                     }
                 }
             }
-            .right {
-            }
         }
+    }
+    .center {
+        text-align: center;
     }
 }

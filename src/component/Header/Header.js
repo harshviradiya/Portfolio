@@ -3,24 +3,14 @@ import { Link } from 'react-scroll'
 import { useLocation } from 'react-router-dom';
 import './Header.scss'
 function Header() {
-
-
-  //   const location =useLocation();
-  //   const { pathname }= location
-  // const splitLocation = pathname.split
-
-
   const [isActive, setActive] = useState();
-
-  const [value, setValue] = useState('');
-
   const [toggle, settoggle] = useState(false);
 
   const handeleactive = (name, data) => {
     console.log(name)
-    // alert(name)
     setActive(name);
     setShowResults(true)
+    settoggle(false)
 
   }
 
